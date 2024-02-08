@@ -175,7 +175,7 @@ export default function Page() {
     });
 
     window.addEventListener('resize', () => {
-      handleResize({ canvas: fabricRef });
+      handleResize({ canvas: fabricRef.current });
     });
 
     window.addEventListener('keydown', (e) => {
