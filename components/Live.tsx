@@ -115,7 +115,7 @@ const Live = ({
   }, [cursorState.mode, setCursorState]);
 
   useEffect(() => {
-    const onKeyUp = (e: React.KeyboardEvent) => {
+    const onKeyUp = (e: KeyboardEvent) => {
         if (e.key === '/') {
           setCursorState({
             mode: CursorMode.Chat,
@@ -136,7 +136,7 @@ const Live = ({
         }
     }
 
-    const onKeyDown = (e: React.KeyboardEvent) => {
+    const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === '/') {
         e.preventDefault();
       }
