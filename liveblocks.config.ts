@@ -12,6 +12,7 @@ const client = createClient({
 // `user.presence` property. Must be JSON-serializable.
 export type Presence = {
   cursor: { x: number, y: number } | null;
+  cursorColor: string | null;
   message: string | null;
 };
 
